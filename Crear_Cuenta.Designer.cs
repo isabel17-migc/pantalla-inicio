@@ -45,10 +45,9 @@
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox1.Location = new Point(249, 119);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(218, 89);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(96, 119);
+            pictureBox1.Size = new Size(84, 90);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
@@ -58,36 +57,35 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Thistle;
             label4.Font = new Font("Stencil", 24F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.Location = new Point(66, 49);
+            label4.Location = new Point(58, 37);
             label4.Name = "label4";
-            label4.Size = new Size(475, 47);
+            label4.Size = new Size(383, 38);
             label4.TabIndex = 10;
             label4.Text = "Crea tu nueva cuenta";
             // 
             // txtcontra
             // 
-            txtcontra.Location = new Point(309, 378);
-            txtcontra.Margin = new Padding(3, 4, 3, 4);
+            txtcontra.Location = new Point(270, 284);
             txtcontra.Name = "txtcontra";
-            txtcontra.Size = new Size(166, 27);
+            txtcontra.Size = new Size(146, 23);
             txtcontra.TabIndex = 14;
             // 
             // txtusuario
             // 
-            txtusuario.Location = new Point(234, 282);
-            txtusuario.Margin = new Padding(3, 4, 3, 4);
+            txtusuario.Location = new Point(205, 212);
             txtusuario.Name = "txtusuario";
-            txtusuario.Size = new Size(225, 27);
+            txtusuario.Size = new Size(197, 23);
             txtusuario.TabIndex = 13;
+            txtusuario.TextChanged += txtusuario_TextChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Rockwell", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(75, 373);
+            label2.Location = new Point(66, 280);
             label2.Name = "label2";
-            label2.Size = new Size(203, 31);
+            label2.Size = new Size(158, 23);
             label2.TabIndex = 12;
             label2.Text = "CONTRASEÑA:";
             // 
@@ -96,30 +94,29 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Rockwell", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(75, 277);
+            label1.Location = new Point(66, 208);
             label1.Name = "label1";
-            label1.Size = new Size(137, 31);
+            label1.Size = new Size(107, 23);
             label1.TabIndex = 11;
             label1.Text = "USUARIO:";
             // 
             // btnnext
             // 
             btnnext.Font = new Font("Segoe UI Historic", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            btnnext.Location = new Point(75, 473);
-            btnnext.Margin = new Padding(3, 4, 3, 4);
+            btnnext.Location = new Point(66, 355);
             btnnext.Name = "btnnext";
-            btnnext.Size = new Size(187, 51);
+            btnnext.Size = new Size(164, 38);
             btnnext.TabIndex = 15;
             btnnext.Text = "Crear";
             btnnext.UseVisualStyleBackColor = true;
+            btnnext.Click += btnnext_Click;
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI Historic", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button1.Location = new Point(293, 473);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(256, 355);
             button1.Name = "button1";
-            button1.Size = new Size(248, 51);
+            button1.Size = new Size(217, 38);
             button1.TabIndex = 16;
             button1.Text = "Volver al longin";
             button1.UseVisualStyleBackColor = true;
@@ -127,7 +124,7 @@
             // 
             // Crear_Cuenta1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.FONDO_2;
             BackgroundImageLayout = ImageLayout.Stretch;
@@ -141,6 +138,7 @@
             Controls.Add(label4);
             Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "Crear_Cuenta1";
             StartPosition = FormStartPosition.CenterScreen;
