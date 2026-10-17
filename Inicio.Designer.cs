@@ -1,6 +1,6 @@
 ﻿namespace pantalla_inicio
 {
-    partial class Form1
+    partial class Inicio
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             lbltitulo = new Label();
             piclogo = new PictureBox();
             btniniciar = new Button();
@@ -42,9 +42,9 @@
             lbltitulo.AutoSize = true;
             lbltitulo.BackColor = Color.Thistle;
             lbltitulo.Font = new Font("Stencil", 21.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lbltitulo.Location = new Point(94, 29);
+            lbltitulo.Location = new Point(107, 39);
             lbltitulo.Name = "lbltitulo";
-            lbltitulo.Size = new Size(379, 34);
+            lbltitulo.Size = new Size(482, 44);
             lbltitulo.TabIndex = 0;
             lbltitulo.Text = "THE BOOKWORM SOCIETY";
             lbltitulo.UseWaitCursor = true;
@@ -54,9 +54,10 @@
             piclogo.BackgroundImage = (Image)resources.GetObject("piclogo.BackgroundImage");
             piclogo.BackgroundImageLayout = ImageLayout.Stretch;
             piclogo.BorderStyle = BorderStyle.Fixed3D;
-            piclogo.Location = new Point(12, 12);
+            piclogo.Location = new Point(14, 16);
+            piclogo.Margin = new Padding(3, 4, 3, 4);
             piclogo.Name = "piclogo";
-            piclogo.Size = new Size(76, 79);
+            piclogo.Size = new Size(86, 104);
             piclogo.SizeMode = PictureBoxSizeMode.CenterImage;
             piclogo.TabIndex = 1;
             piclogo.TabStop = false;
@@ -68,12 +69,14 @@
             btniniciar.Font = new Font("Rockwell", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btniniciar.ForeColor = Color.Black;
             btniniciar.ImageAlign = ContentAlignment.TopCenter;
-            btniniciar.Location = new Point(159, 260);
+            btniniciar.Location = new Point(182, 347);
+            btniniciar.Margin = new Padding(3, 4, 3, 4);
             btniniciar.Name = "btniniciar";
-            btniniciar.Size = new Size(181, 42);
+            btniniciar.Size = new Size(207, 56);
             btniniciar.TabIndex = 2;
             btniniciar.Text = "INICIAR";
             btniniciar.UseVisualStyleBackColor = false;
+            btniniciar.Click += btniniciar_Click;
             // 
             // lblfrase
             // 
@@ -82,9 +85,9 @@
             lblfrase.FlatStyle = FlatStyle.Flat;
             lblfrase.Font = new Font("Script MT Bold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblfrase.ForeColor = Color.DarkMagenta;
-            lblfrase.Location = new Point(63, 441);
+            lblfrase.Location = new Point(72, 588);
             lblfrase.Name = "lblfrase";
-            lblfrase.Size = new Size(387, 27);
+            lblfrase.Size = new Size(494, 35);
             lblfrase.TabIndex = 3;
             lblfrase.Text = "Tus libros, tus reseñas, tu historia de lectura";
             // 
@@ -92,26 +95,30 @@
             // 
             linkpolitica.AutoSize = true;
             linkpolitica.BorderStyle = BorderStyle.Fixed3D;
-            linkpolitica.Location = new Point(320, 502);
+            linkpolitica.Location = new Point(366, 669);
             linkpolitica.Name = "linkpolitica";
-            linkpolitica.Size = new Size(168, 17);
+            linkpolitica.Size = new Size(213, 22);
             linkpolitica.TabIndex = 4;
             linkpolitica.TabStop = true;
             linkpolitica.Text = "VER POLITICA DE PRIVACIDAD";
             // 
-            // Form1
+            // Inicio
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(500, 528);
+            ClientSize = new Size(601, 704);
             Controls.Add(linkpolitica);
             Controls.Add(lblfrase);
             Controls.Add(btniniciar);
             Controls.Add(piclogo);
             Controls.Add(lbltitulo);
-            Name = "Form1";
-            Text = "MIS LIBROS";
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            Name = "Inicio";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "The bookWorm Society";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)piclogo).EndInit();
             ResumeLayout(false);
