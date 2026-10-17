@@ -59,5 +59,15 @@ namespace pantalla_inicio.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FONDO_2 {
+            get {
+                object obj = ResourceManager.GetObject("FONDO 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

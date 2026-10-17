@@ -13,6 +13,9 @@
     <Compile Update="Crear_Cuenta.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Longin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -20,6 +23,15 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl3.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 

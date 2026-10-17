@@ -1,4 +1,6 @@
+using dassh_board;
 using pantalla_inicio;
+using System.Data.SqlTypes;
 
 namespace pantalla_loig_in
 {
@@ -21,7 +23,12 @@ namespace pantalla_loig_in
 
         private void btnnext_Click(object sender, EventArgs e)
         {
+            Dashboard1 dashboard = new Dashboard1();
 
+            dashboard.FormClosed += (s, args) => Application.Exit();
+
+            dashboard.Show();
+            this.Hide();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

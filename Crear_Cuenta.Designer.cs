@@ -129,7 +129,9 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(601, 704);
+            BackgroundImage = Properties.Resources.FONDO_2;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(573, 692);
             Controls.Add(button1);
             Controls.Add(btnnext);
             Controls.Add(txtcontra);
