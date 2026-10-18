@@ -33,6 +33,7 @@
             userControl21 = new UserControl2();
             userControl31 = new UserControl3();
             panel1 = new Panel();
+            button1 = new Button();
             btncerrar = new Button();
             btnusuario = new Button();
             btnagg = new Button();
@@ -49,6 +50,8 @@
             userControl11.Name = "userControl11";
             userControl11.Size = new Size(228, 159);
             userControl11.TabIndex = 0;
+            userControl11.Load += userControl11_Load;
+            userControl11.Click += btnbiblioteca_Click;
             // 
             // userControl21
             // 
@@ -59,6 +62,7 @@
             userControl21.Name = "userControl21";
             userControl21.Size = new Size(228, 159);
             userControl21.TabIndex = 1;
+            userControl21.Click += btnagg_Click;
             // 
             // userControl31
             // 
@@ -74,6 +78,7 @@
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(btncerrar);
             panel1.Controls.Add(btnusuario);
             panel1.Controls.Add(btnagg);
@@ -85,6 +90,23 @@
             panel1.Size = new Size(194, 691);
             panel1.TabIndex = 3;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.BackgroundImageLayout = ImageLayout.Center;
+            button1.Font = new Font("Segoe UI Emoji", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.DarkMagenta;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(10, 48);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(171, 57);
+            button1.TabIndex = 4;
+            button1.Text = "INICIO";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // btncerrar
             // 
             btncerrar.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -95,8 +117,9 @@
             btncerrar.Name = "btncerrar";
             btncerrar.Size = new Size(171, 40);
             btncerrar.TabIndex = 3;
-            btncerrar.Text = "cerrar seccion";
+            btncerrar.Text = "Cerrar seción";
             btncerrar.UseVisualStyleBackColor = true;
+            btncerrar.Click += btncerrar_Click;
             // 
             // btnusuario
             // 
@@ -104,13 +127,14 @@
             btnusuario.ForeColor = Color.DarkMagenta;
             btnusuario.Image = (Image)resources.GetObject("btnusuario.Image");
             btnusuario.ImageAlign = ContentAlignment.MiddleLeft;
-            btnusuario.Location = new Point(11, 377);
+            btnusuario.Location = new Point(10, 442);
             btnusuario.Margin = new Padding(3, 4, 3, 4);
             btnusuario.Name = "btnusuario";
             btnusuario.Size = new Size(171, 57);
             btnusuario.TabIndex = 2;
             btnusuario.Text = "CUENTA/USUARIO";
             btnusuario.UseVisualStyleBackColor = true;
+            btnusuario.Click += btnusuario_Click;
             // 
             // btnagg
             // 
@@ -118,13 +142,14 @@
             btnagg.ForeColor = Color.DarkMagenta;
             btnagg.Image = (Image)resources.GetObject("btnagg.Image");
             btnagg.ImageAlign = ContentAlignment.MiddleLeft;
-            btnagg.Location = new Point(11, 229);
+            btnagg.Location = new Point(10, 300);
             btnagg.Margin = new Padding(3, 4, 3, 4);
             btnagg.Name = "btnagg";
             btnagg.Size = new Size(171, 57);
             btnagg.TabIndex = 1;
             btnagg.Text = "AGREGAR LIBROS";
             btnagg.UseVisualStyleBackColor = true;
+            btnagg.Click += btnagg_Click;
             // 
             // btnbiblioteca
             // 
@@ -133,7 +158,7 @@
             btnbiblioteca.ForeColor = Color.DarkMagenta;
             btnbiblioteca.Image = (Image)resources.GetObject("btnbiblioteca.Image");
             btnbiblioteca.ImageAlign = ContentAlignment.TopRight;
-            btnbiblioteca.Location = new Point(11, 91);
+            btnbiblioteca.Location = new Point(10, 165);
             btnbiblioteca.Margin = new Padding(3, 4, 3, 4);
             btnbiblioteca.Name = "btnbiblioteca";
             btnbiblioteca.Size = new Size(171, 57);
@@ -154,6 +179,7 @@
             Controls.Add(userControl31);
             Controls.Add(userControl21);
             Controls.Add(userControl11);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
@@ -161,7 +187,7 @@
             MinimumSize = new Size(569, 651);
             Name = "Dashboard1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "The BookWorm Society";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             ResumeLayout(false);
@@ -177,5 +203,6 @@
         private Button btnagg;
         private Button btnbiblioteca;
         private Button btncerrar;
+        private Button button1;
     }
 }
