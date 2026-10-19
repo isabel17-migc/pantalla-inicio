@@ -11,7 +11,7 @@ Base de datos: ["script_biblioteca_0.4.sql"]
 La base de datos se crea automáticamente al iniciar el programa.
 
 Si en su computadora el usuario o la contraseña de MySQL son
-distintos, la aplicación mostrará un aviso de que no pudo conectarse
+distintos, visual studio mostrará un aviso de que no pudo conectarse
 y se cerrará. No es un error del programa: solo es necesario
 cambiar esos datos en el archivo [conexion.cs], en la línea :
 
