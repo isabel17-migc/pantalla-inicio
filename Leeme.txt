@@ -1,0 +1,25 @@
+AVISO PARA EL PROFESOR: CONEXIÓN A MYSQL
+
+La aplicación se conecta a MySQL con los siguientes datos:
+
+Servidor: localhost
+Puerto: 3306
+Usuario: root
+Contraseña: ["vacía" ]
+Base de datos: ["script_biblioteca_0.4.sql"]
+
+La base de datos se crea automáticamente al iniciar el programa.
+
+Si en su computadora el usuario o la contraseña de MySQL son
+distintos, la aplicación mostrará un aviso de que no pudo conectarse
+y se cerrará. No es un error del programa: solo es necesario
+cambiar esos datos en el archivo [conexion.cs], en la línea :
+
+ 10-  public string Usuario { get; set; } = "root";
+ 11-  public string Password { get; set; } = "";
+
+, y volver a ejecutar.
+
+En la entrega final este paso ya no será necesario.
+
+Una gran disculpa por la molestia de tener que hacer este ajuste.
